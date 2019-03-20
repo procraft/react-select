@@ -3,7 +3,12 @@
 [![Coverage Status](https://coveralls.io/repos/JedWatson/react-select/badge.svg?branch=master&service=github)](https://coveralls.io/github/JedWatson/react-select?branch=master)
 [![Supported by Thinkmill](https://thinkmill.github.io/badge/heart.svg)](http://thinkmill.com.au/?utm_source=github&utm_medium=badge&utm_campaign=react-select)
 
-# React-Select
+# React-Select (v2 with different npm name)
+
+> DISCLAIMER: this fork aims to provide npm-installable version of react-select v2 which can co-exist with v1
+> to enable smooth transition.
+>
+> Typescript definitions from ``@types/react-select`` are also bundled.
 
 The Select control for [React](https://reactjs.com). Initially built for use in [KeystoneJS](http://www.keystonejs.com).
 
@@ -32,7 +37,7 @@ The old docs and examples will continue to be available at [v1.react-select.com]
 The easiest way to use react-select is to install it from npm and build it into your app with Webpack.
 
 ```
-yarn add react-select
+yarn add @procraft/react-select
 ```
 
 Then use it in your app:

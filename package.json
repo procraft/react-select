@@ -1,15 +1,16 @@
 {
-  "name": "react-select",
-  "version": "2.4.2",
-  "description": "A Select control built with and for ReactJS",
+  "name": "@procraft/react-select",
+  "version": "2.4.2-2",
+  "description": "Fork of original JedWatson/react-select v2 with different npm name and typescript definitions included enabling smooth transition from v1",
   "main": "lib/index.js",
   "module": "dist/react-select.esm.js",
+  "typings": "types/index.d.ts",
   "sideEffects": false,
   "author": "Jed Watson",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JedWatson/react-select.git"
+    "url": "https://github.com/procraft/react-select.git"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -47,7 +48,6 @@
     "coveralls": "^2.11.12",
     "cross-env": "^5.1.3",
     "css-loader": "^0.28.7",
-    "cypress": "^1.4.1",
     "dotenv": "^5.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -95,7 +95,7 @@
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "deploy": "cross-env NODE_ENV=production nps publish",
-    "start": "cross-env FORCE_EXTRACT_REACT_TYPES=true webpack-dev-server --progress",
+    "start": "cross-env FORCE_EXTRACT_REACT_TYPES=true webpack-denpm v-server --progress",
     "fresh": "rm -rf node_modules && yarn install",
     "test": "npm run test:jest && npm run test:cypress",
     "test:jest": "jest --coverage",
